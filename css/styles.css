@@ -1,0 +1,453 @@
+/* ==========================================================================
+Fonts
+========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+/* ==========================================================================
+Typography
+========================================================================== */
+p {
+  font-size: 15px;
+  line-height: 29px;
+  color: rgba(28, 54, 83, 0.6);
+  padding-bottom: 20px;
+}
+  .jumbotron p {
+    font-size: 15px !important;
+  }
+  .jumbotron {
+    margin-bottom: 0 !important;
+  }
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+Global Styles
+========================================================================== */
+a {
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-property: color, border-color, background-color;
+  transition-property: color, border-color, background-color;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: initial !important;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.section-padding {
+  padding: 140px 0;
+}
+
+/* ==========================================================================
+Mobile Navigation
+========================================================================== */
+.header-nav.open {
+  visibility: visible;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: 999999;
+  padding: 10px 35px 16px 0;
+  cursor: pointer;
+}
+.nav-toggle:focus {
+  outline: none;
+}
+  .nav-toggle span,
+  .nav-toggle span:before,
+  .nav-toggle span:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 3px;
+    border-radius: 1px;
+    background: #fff;
+    cursor: pointer;
+  }
+  .nav-toggle span,
+  .nav-toggle span:before,
+  .nav-toggle span:after {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+    .nav-toggle span:before {
+      top: -10px;
+    }
+    .nav-toggle span:after {
+      bottom: -10px;
+    }
+
+.nav-toggle.active span {
+  background-color: transparent;
+}
+.nav-toggle.active span:before,
+.nav-toggle.active span:after {
+  top: 0;
+}
+.nav-toggle.active span:before {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.nav-toggle.active span:after {
+  top: 10px;
+  -ms-transform: translatey(-10px) rotate(-45deg);
+  -webkit-transform: translatey(-10px) rotate(-45deg);
+  transform: translatey(-10px) rotate(-45deg);
+}
+
+.navicon {
+  position: absolute;
+  height: 26px;
+  right: 10px;
+  top: 48px;
+  visibility: hidden;
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+}
+
+/* ==========================================================================
+Navbar
+========================================================================== */
+.navigation {
+  -webkit-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.fixed {
+  position: fixed;
+  background-color: #212e3b;
+  z-index: 999;
+  width: 100%;
+} 
+  .fixed header .logo img {
+    width: 120px;
+  }
+
+header {
+  padding: 20px 0;
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  -webkit-transition: padding 300ms ease-in-out;
+          transition: padding 300ms ease-in-out;
+}
+  header a {
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  header .logo {
+    display: inline-block;
+  }
+
+ /************** TODO **************
+  header ul.primary-nav {
+    margin: 0 0 0 75px;
+    padding: 0;
+  }
+    header ul.primary-nav li {
+      display: inline;
+    }
+      header ul.primary-nav li a {
+        color: #fff;
+        padding-right: 25px;
+      }
+        header ul.primary-nav li a:hover {
+          color: #a09dc3;
+        }
+      header ul.primary-nav li:last-child a {
+        padding-right: 0px;
+      }
+  ***********************************/
+
+  header ul.actions li {
+    font-weight: bold;
+    display: inline;
+  }
+    header ul.actions li a {
+      color: #fff;
+    }
+      header ul.actions li a:hover {
+        color: #a09dc3;
+      }
+  header .header-nav {
+    display: inline-block;
+  }
+  header .actions {
+    position: absolute;
+    right: 0;
+    top: 41px;
+    -webkit-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+  }
+
+/* ==========================================================================
+Carousel
+========================================================================== */
+.carousel-info {
+  font-family: Cambria, serif;
+  background: url("../img/profile.jpg") no-repeat center center;
+  background-size: cover;
+}
+  .carousel-info .avatar {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 1px solid #fff;
+  }
+    .carousel-info .avatar:before {
+      font-size: 30px;
+      line-height: 2.5;
+      color: #fff;
+    }
+  .carousel-info h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 30px 0;
+    padding: 0 30px 0 30px;
+  }
+  .carousel-info p {
+    color: #ACB1B4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+/* ==========================================================================
+Gallery
+========================================================================== */
+.gallery {
+  margin-top: 20px;
+}
+  .gallery img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+  .gallery h2 {
+    font-size: 11px;
+    color: #212c3a;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 35px;
+  }
+  .gallery .gallery-img-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+    .gallery .gallery-img-wrap .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      -webkit-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+      opacity: 0;
+    }
+    .gallery .gallery-img-wrap i {
+      color: #3D4351;
+      font-size: 20px;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 25px;
+      right: 35px;
+    }
+  .gallery .gallery-img-wrap:hover img,
+  .gallery .gallery-img-wrap:focus img {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .gallery .gallery-img-wrap:hover .overlay,
+  .gallery .gallery-img-wrap:focus .overlay {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+    filter: alpha(opacity=1);
+    opacity: 1;
+    z-index: 9;
+  }
+  .gallery figcaption i {
+    margin-left: 5px;
+    font-size: 15px;
+  }
+
+/* ==========================================================================
+Footer
+========================================================================== */
+footer {
+  background-color: #003e72;
+  position: relative;
+}
+  footer .footer-bio {
+    margin: 86px 30px 40px 0;
+  }
+  footer h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  footer p {
+    font-family: Cambria, serif;
+    letter-spacing: 0.1em;
+    color: #a29ec4;
+    font-size: 13px;
+  }
+  footer a {
+    color: #fff;
+  }
+  footer a:hover {
+    color: #a29ec4;
+  }
+
+  footer .footer-social {
+    position: absolute;
+    background-color: #002d61;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    padding: 142px 0 0 70px;
+  }
+    footer .footer-social a.twitter-me {
+      height: 60px;
+      width: 60px;
+      background-color: #1AB4EF;
+      border-radius: 3px;
+      font-size: 22px;
+      display: inline-block;
+      text-align: center;
+      margin-right: 20px;
+    }
+    footer .footer-social a.twitter-me:hover,
+    footer .footer-social a.twitter-me:focus {
+      background-color: #1590BF;
+    }
+    footer .footer-social a.instagram-me {
+      height: 60px;
+      width: 60px;
+      background-color: #9b6954;
+      border-radius: 3px;
+      font-size: 22px;
+      display: inline-block;
+      text-align: center;
+      margin-right: 20px;
+    }
+    footer .footer-social a.instagram-me:hover,
+    footer .footer-social a.instagram-me:focus {
+      background-color: #8a5e4b;
+    }
+    footer .footer-social a.linkedin-me {
+      height: 60px;
+      width: 60px;
+      background-color: #007bb5;
+      border-radius: 3px;
+      font-size: 22px;
+      display: inline-block;
+      text-align: center;
+      margin-right: 20px;
+    }
+    footer .footer-social a.linkedin-me:hover,
+    footer .footer-social a.linkedin-me:focus {
+      background-color: #006a9c;
+    }
+    footer .footer-social a.github-me {
+      height: 60px;
+      width: 60px;
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 3px;
+      font-size: 22px;
+      display: inline-block;
+      text-align: center;
+    }
+    footer .footer-social a.github-me:hover,
+    footer .footer-social a.github-me:focus {
+      background-color: #000;
+    }
+    footer .footer-social a {
+      color: #fff;
+    }
+    footer .footer-social a:hover {
+      color: #fff;
+    }
+    footer .footer-social a i {
+      margin-top: 20px;
+    }
+
+/* ==========================================================================
+Buttons
+========================================================================== */
+.btn-white {
+  font-size: 13px;
+  border: solid 2px;
+  border-radius: 40px;
+  display: inline-block;
+  border-color: #fff;
+}
+.btn-white:hover {
+  color: #a09dc3;
+  border-color: #a09dc3;
+}
+
+.btn-small {
+  padding: 8px 40px;
+}

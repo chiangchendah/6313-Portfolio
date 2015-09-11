@@ -1,0 +1,199 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/queries.css">
+        
+        <!-- embedded font -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="navigation">
+
+            <!-- accessiblity 1: use of semantic HTML -->
+
+            <header>
+                <div class="header-content">
+                    <div class="logo">
+                        <img src="img/signature@150.png" alt="Chiang Chen-Dah">
+                    </div>
+
+                    <!-- bootstrap component 1: navbar -->
+
+                    <div class="header-nav navbar-header">
+                        <nav>
+                            <!-- TODO: link to project pages -->
+                            <!-- <ul class="primary-nav"> -->
+                                <!-- <li><a href="#">Gallery</a></li>
+                                <li><a href="#">About</a></li> -->
+                            <!-- </ul> -->
+                            <ul class="actions">
+                                <li><a href="img/resume.pdf" target="_blank" class="btn-white btn-small">resume</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- bootstrap component 2: jumbotron -->
+        <!-- accessiblity 2: carousel has keyboard navigation -->
+
+        <section class="jumbotron carousel-info section-padding text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    
+                                    <!-- bootstrap component 3: glyphs -->
+                                    <!-- accessiblity 3: avoid output in screen readers with ARIA -->
+
+                                    <span style="width: 75px; height: 75px; border-radius: 50%; border: 1px solid #fff; font-size: 30px; line-height: 2.5; color: #fff;" class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    <h2>"Visual acuity with respect to the client's vision."</h2>
+                                    <p class="author">Web Designer</p>
+                                </li>
+                                <li>
+                                    <i class="avatar fa fa-code"></i>
+                                    <h2>"JavaScript Expert. MEAN. Web Applications."</h2>
+                                    <p class="author">Full Stack Engineer</p>
+                                </li>
+                                <li>
+                                    <i class="avatar fa fa-mortar-board"></i>
+                                    <h2>"Master of Human-Computer Interaction Candidate 2017."</h2>
+                                    <p class="author">Evidence-based UX</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="gallery text-center">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <!-- grid layout 1 -->
+
+                    <div class="col-sm-4">
+                        <article class="gallery-post">
+                            <figure>
+                                <a href="http://chiangchendah.net/462">
+                                    <div class="gallery-img-wrap">
+                                        <div class="overlay">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                        
+                                        <!-- local image -->
+                                        <!-- accessiblity 4: text equivalent for non-text element -->
+
+                                        <img src="img/thumbnails/thumbnail_462" alt="thumbnail 462"/>
+                                    </div>
+                                </a>
+                                <figcaption>
+                                <hr>
+                                <h2 class="gallery-category">Selected Student Work</h2>
+                                <p>Manipulation of shadows through parametric design and 3D modeling.</p>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="gallery-post">
+                            <figure>
+                                <a href="http://chiangchendah.net/312">
+                                    <div class="gallery-img-wrap">
+                                        <div class="overlay">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                        <img src="img/thumbnails/thumbnail_312" alt="thumbnail 312"/>
+                                    </div>
+                                </a>
+                                <figcaption>
+                                <hr>
+                                <h2 class="gallery-category">Selected Student Work</h2>
+                                <p>A promotional urban district designed for social revitalization.</p>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                    <div class="col-sm-4">
+                        <article class="gallery-post">
+                            <figure>
+                                <a href="http://chiangchendah.net/311">
+                                    <div class="gallery-img-wrap">
+                                        <div class="overlay">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                        <img src="img/thumbnails/thumbnail_311" alt="thumbnail 311"/>
+                                    </div>
+                                </a>
+                                <figcaption>
+                                <hr>
+                                <h2 class="gallery-category">Selected Student Work</h2>
+                                <p>Engineering structures explored on top of a bridge through lasercut models.</p>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+
+                    <!-- grid layout 2 -->
+
+                    <div class="col-md-7">
+                        <div class="footer-bio">
+                            <p> Hello!</p>
+                            <p>Originally from Taipei, Taiwan, <a href="https://www.facebook.com/dchiang0326">蔣承達（Chiang, Chen-Dah)</a> received design training in relation to architecture at the <a href="http://samfoxschool.wustl.edu/" target="_blank">Sam Fox School of Design & Visual Arts at Washington University in St. Louis</a>. In particular, he is a self-taught web designer and front-end developer. For a year after graduation, he worked for <a href="https://www.launchcode.org/" target="_blank">LaunchCode</a>, a non-profit organization on a mission to increase upward economic opportunity as well as regional talent retainment for the present tech industry in the United States. His work there used his right-brain empathy for the fashioning of webpage ideas, and his left-brain logic for code development in the computer's web browser. Subsequently in the following 3 months, he aggressively accelerated his technical skills at <a href="http://www.hackreactor.com/">Hack Reactor</a>, an advanced software engineering immersive. He is now pursuing a Masters in Human-Computer Interaction at Georgia Tech and plans to graduate in spring 2017.</p>
+                            <p>This is his personal page as a graduate student.</p>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        
+                        <!-- accessiblity 5: respects hierachy of nested headings -->
+                        
+                        <h6>More about me</h6>
+                        <a href="https://twitter.com/chd_ch" class="twitter-me" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://instagram.com/dchiang26/" class="instagram-me" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/chiangchendah" class="linkedin-me"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/chiangchendah" class="github-me"><i class="fa fa-github"></i></a>
+
+                        <!-- online image -->
+
+                        <h6 style="margin-top: 40px;">Proudly Instructed By</h6>
+                        <img style="width: 100px;" src="http://www.mshci.gatech.edu/sites/default/files/gt_theme_files/HCI-logo.png" alt="Georgia Tech MS-HCI DM">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="bower_components/classie/classie.js"></script>
+    </body>
+</html>
